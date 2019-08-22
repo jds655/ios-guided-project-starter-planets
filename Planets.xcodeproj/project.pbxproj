@@ -13,6 +13,10 @@
 		9DDBBD112113609800A55978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDBBD0F2113609800A55978 /* LaunchScreen.storyboard */; };
 		9DDBBD19211360D100A55978 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD18211360D100A55978 /* Planet.swift */; };
 		9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD1E211360F500A55978 /* PlanetController.swift */; };
+		E05F346F230EF5F200D1C81F /* PlanetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05F346E230EF5F200D1C81F /* PlanetCollectionViewController.swift */; };
+		E05F3471230EFE5500D1C81F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05F3470230EFE5500D1C81F /* SettingsViewController.swift */; };
+		E05F3473230EFFC000D1C81F /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05F3472230EFFC000D1C81F /* PlanetCollectionViewCell.swift */; };
+		E05F3476230F0E7200D1C81F /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05F3475230F0E7200D1C81F /* SettingsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9DDBBD122113609800A55978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDBBD18211360D100A55978 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		9DDBBD1E211360F500A55978 /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		E05F346E230EF5F200D1C81F /* PlanetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewController.swift; sourceTree = "<group>"; };
+		E05F3470230EFE5500D1C81F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E05F3472230EFFC000D1C81F /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
+		E05F3475230F0E7200D1C81F /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,8 @@
 		27F670EB21EFC6AA0035C1BF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E05F346E230EF5F200D1C81F /* PlanetCollectionViewController.swift */,
+				E05F3470230EFE5500D1C81F /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -47,6 +57,7 @@
 		9DDBBCFA2113609700A55978 = {
 			isa = PBXGroup;
 			children = (
+				E05F3475230F0E7200D1C81F /* SettingsKeys.swift */,
 				9DDBBD052113609700A55978 /* Planets */,
 				9DDBBD042113609700A55978 /* Products */,
 			);
@@ -65,19 +76,20 @@
 			children = (
 				9DDBBD062113609700A55978 /* AppDelegate.swift */,
 				27F670EB21EFC6AA0035C1BF /* View Controllers */,
-				9DDBBD1A211360D500A55978 /* Model */,
-				9DDBBD1C211360E000A55978 /* Model Controller */,
+				9DDBBD1A211360D500A55978 /* Models */,
+				9DDBBD1C211360E000A55978 /* Model Controllers */,
 				9DDBBD1B211360DA00A55978 /* Resources */,
+				E05F3474230EFFCB00D1C81F /* Views */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
 		};
-		9DDBBD1A211360D500A55978 /* Model */ = {
+		9DDBBD1A211360D500A55978 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				9DDBBD18211360D100A55978 /* Planet.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9DDBBD1B211360DA00A55978 /* Resources */ = {
@@ -91,12 +103,20 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		9DDBBD1C211360E000A55978 /* Model Controller */ = {
+		9DDBBD1C211360E000A55978 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9DDBBD1E211360F500A55978 /* PlanetController.swift */,
 			);
-			path = "Model Controller";
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		E05F3474230EFFCB00D1C81F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E05F3472230EFFC000D1C81F /* PlanetCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +193,11 @@
 			files = (
 				9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */,
 				9DDBBD072113609700A55978 /* AppDelegate.swift in Sources */,
+				E05F3473230EFFC000D1C81F /* PlanetCollectionViewCell.swift in Sources */,
+				E05F346F230EF5F200D1C81F /* PlanetCollectionViewController.swift in Sources */,
+				E05F3471230EFE5500D1C81F /* SettingsViewController.swift in Sources */,
 				9DDBBD19211360D100A55978 /* Planet.swift in Sources */,
+				E05F3476230F0E7200D1C81F /* SettingsKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
